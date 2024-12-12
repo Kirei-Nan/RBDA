@@ -1,0 +1,24 @@
+# Upload data to HDFS
+hdfs dfs -put stackoverflow_data.csv /user/yourusername/stackoverflow_data.csv
+
+# Run data profiling
+hadoop jar /usr/lib/hadoop/hadoop-streaming.jar \
+    -D mapreduce.job.name="StackOverflow Data Profiling" \
+    -input /user/yourusername/stackoverflow_data.csv \
+    -output /user/yourusername/stackoverflow_profile_output \
+    -mapper ./data_profiling_mapper.py \
+    -reducer ./data_profiling_reducer.py \
+    -file ./data_profiling_mapper.py \
+    -file ./data_profiling_reducer.py
+    -cmdenv PYTHONIOENCODING=utf-8
+
+# Run data cleaning
+hadoop jar /usr/lib/hadoop/hadoop-streaming.jar \
+    -D mapreduce.job.name="StackOverflow Data Cleaning" \
+    -input /user/yourusername/stackoverflow_data.csv \
+    -output /user/yourusername/stackoverflow_clean_output \
+    -mapper ./data_cleaning_mapper.py \
+    -reducer ./data_cleaning_reducer.py \
+    -file ./data_cleaning_mapper.py \
+    -file ./data_cleaning_reducer.py
+    -cmdenv PYTHONIOENCODING=utf-8

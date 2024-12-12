@@ -1,0 +1,11 @@
+github hot words 2024-Q1:
+error: 244
+bug: 203
+image: 197
+version: 187
+file: 187
+assets: 179
+data: 177
+code: 174
+issue: 174
+api: 134

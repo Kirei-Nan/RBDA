@@ -1,0 +1,11 @@
+github hot words 2024-Q4:
+file: 81
+attachments: 78
+assets: 75
+error: 73
+version: 72
+issue: 72
+code: 68
+bug: 67
+work: 64
+image: 63

@@ -1,0 +1,11 @@
+github hot words overall:
+error: 1720
+version: 1402
+bug: 1395
+file: 1291
+image: 1191
+data: 1084
+issue: 1077
+code: 1056
+assets: 1021
+test: 853

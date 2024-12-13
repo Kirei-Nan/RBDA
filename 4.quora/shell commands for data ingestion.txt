@@ -1,0 +1,17 @@
+cd project
+
+// compile
+javac -classpath `hadoop classpath` *.java
+jar cvf dataProfiling.jar *.class
+jar cvf dataCleaning.jar *.class
+
+// data profiling
+hadoop jar dataProfiling.jar DataProfiling project/input project/output_profile
+// to see the result
+hadoop fs -cat project/output_profile/part-r-00000
+
+
+// data cleaning
+hadoop jar dataCleaning.jar DataCleaning project/input project/output_clean
+// to see the result
+hadoop fs -cat project/output_clean/part-m-00000

@@ -1,0 +1,11 @@
+hackernews hot words 2011-2015:
+work: 201
+good: 190
+better: 117
+first: 113
+right: 112
+code: 112
+company: 107
+years: 102
+never: 97
+pretty: 94

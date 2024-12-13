@@ -1,0 +1,11 @@
+github hot words 2024-Q2:
+error: 261
+assets: 200
+bug: 192
+file: 191
+version: 189
+image: 179
+data: 162
+api: 157
+issue: 144
+code: 139

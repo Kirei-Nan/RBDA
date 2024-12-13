@@ -1,0 +1,256 @@
+Script started on 2024-11-20 10:49:49+00:00 [TERM="xterm-256color" TTY="/dev/pts/0" COLUMNS="173" LINES="46"]
+[?2004h]0;yz10317_nyu_edu@nyu-dataproc-m: ~[01;32myz10317_nyu_edu@nyu-dataproc-m[00m:[01;34m~[00m$ [7mjavac -classpath `hadoop classpath` *.java[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Cjavac -classpath `hadoop classpath` *.java
+[?2004lNote: DataIngest.java uses unchecked or unsafe operations.
+Note: Recompile with -Xlint:unchecked for details.
+[?2004h]0;yz10317_nyu_edu@nyu-dataproc-m: ~[01;32myz10317_nyu_edu@nyu-dataproc-m[00m:[01;34m~[00m$ [7mjar cvf dataIngest.jar *.class[27mjar cvf dataIngest.jar *.class
+[?2004ladded manifest
+adding: DataIngest$IdMapper.class(in = 1808) (out= 752)(deflated 58%)
+adding: DataIngest$ValueReducer.class(in = 3338) (out= 1461)(deflated 56%)
+adding: DataIngest.class(in = 3690) (out= 1671)(deflated 54%)
+[?2004h]0;yz10317_nyu_edu@nyu-dataproc-m: ~[01;32myz10317_nyu_edu@nyu-dataproc-m[00m:[01;34m~[00m$ [7mhadoop jar dataIngest.jar DataIngest gs://nyu-dataproc-hdfs-ingest/gharchive gs://nyu-dataproc-hdfs-ingest/gharchive/output[27m[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[Chadoop jar dataIngest.jar DataIngest gs://nyu-dataproc-hdfs-ingest/gharchive gs://nyu-dataproc-hdfs-ingest/gharchive/output
+[?2004l2024-11-20 10:50:20,871 INFO impl.MetricsConfig: Loaded properties from hadoop-metrics2.properties
+2024-11-20 10:50:20,956 INFO impl.MetricsSystemImpl: Scheduled Metric snapshot period at 10 second(s).
+2024-11-20 10:50:20,956 INFO impl.MetricsSystemImpl: google-hadoop-file-system metrics system started
+2024-11-20 10:50:21,241 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at nyu-dataproc-m.c.hpc-dataproc-19b8.internal./192.168.1.25:8032
+2024-11-20 10:50:21,638 INFO client.AHSProxy: Connecting to Application History server at nyu-dataproc-m.c.hpc-dataproc-19b8.internal./192.168.1.25:10200
+2024-11-20 10:50:22,931 WARN mapreduce.JobResourceUploader: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2024-11-20 10:50:22,945 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/yz10317_nyu_edu/.staging/job_1724767128407_10032
+2024-11-20 10:50:23,330 INFO input.FileInputFormat: Total input files to process : 90
+2024-11-20 10:50:23,409 INFO mapreduce.JobSubmitter: number of splits:90
+2024-11-20 10:50:23,609 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1724767128407_10032
+2024-11-20 10:50:23,609 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2024-11-20 10:50:23,775 INFO conf.Configuration: resource-types.xml not found
+2024-11-20 10:50:23,775 INFO resource.ResourceUtils: Unable to find 'resource-types.xml'.
+2024-11-20 10:50:23,853 INFO impl.YarnClientImpl: Submitted application application_1724767128407_10032
+2024-11-20 10:50:23,888 INFO mapreduce.Job: The url to track the job: http://nyu-dataproc-m.c.hpc-dataproc-19b8.internal.:8088/proxy/application_1724767128407_10032/
+2024-11-20 10:50:23,889 INFO mapreduce.Job: Running job: job_1724767128407_10032
+2024-11-20 10:50:32,986 INFO mapreduce.Job: Job job_1724767128407_10032 running in uber mode : false
+2024-11-20 10:50:32,987 INFO mapreduce.Job:  map 0% reduce 0%
+2024-11-20 10:50:55,153 INFO mapreduce.Job:  map 1% reduce 0%
+2024-11-20 10:50:56,159 INFO mapreduce.Job:  map 6% reduce 0%
+2024-11-20 10:50:58,183 INFO mapreduce.Job:  map 9% reduce 0%
+2024-11-20 10:50:59,188 INFO mapreduce.Job:  map 10% reduce 0%
+2024-11-20 10:51:00,221 INFO mapreduce.Job:  map 12% reduce 0%
+2024-11-20 10:51:01,234 INFO mapreduce.Job:  map 13% reduce 0%
+2024-11-20 10:51:02,240 INFO mapreduce.Job:  map 18% reduce 0%
+2024-11-20 10:51:03,249 INFO mapreduce.Job:  map 22% reduce 0%
+2024-11-20 10:51:06,266 INFO mapreduce.Job:  map 31% reduce 0%
+2024-11-20 10:51:07,273 INFO mapreduce.Job:  map 38% reduce 0%
+2024-11-20 10:51:08,287 INFO mapreduce.Job:  map 51% reduce 0%
+2024-11-20 10:51:09,299 INFO mapreduce.Job:  map 61% reduce 0%
+2024-11-20 10:51:10,315 INFO mapreduce.Job:  map 62% reduce 0%
+2024-11-20 10:51:18,386 INFO mapreduce.Job:  map 63% reduce 0%
+2024-11-20 10:51:20,402 INFO mapreduce.Job:  map 66% reduce 0%
+2024-11-20 10:51:21,411 INFO mapreduce.Job:  map 67% reduce 0%
+2024-11-20 10:51:22,418 INFO mapreduce.Job:  map 68% reduce 0%
+2024-11-20 10:51:23,424 INFO mapreduce.Job:  map 70% reduce 0%
+2024-11-20 10:51:24,429 INFO mapreduce.Job:  map 73% reduce 0%
+2024-11-20 10:51:25,435 INFO mapreduce.Job:  map 76% reduce 0%
+2024-11-20 10:51:26,439 INFO mapreduce.Job:  map 78% reduce 0%
+2024-11-20 10:51:27,444 INFO mapreduce.Job:  map 80% reduce 0%
+2024-11-20 10:51:28,449 INFO mapreduce.Job:  map 82% reduce 0%
+2024-11-20 10:51:29,453 INFO mapreduce.Job:  map 89% reduce 0%
+2024-11-20 10:51:30,458 INFO mapreduce.Job:  map 90% reduce 0%
+2024-11-20 10:51:32,468 INFO mapreduce.Job:  map 91% reduce 0%
+2024-11-20 10:51:35,481 INFO mapreduce.Job:  map 95% reduce 0%
+2024-11-20 10:51:36,486 INFO mapreduce.Job:  map 96% reduce 0%
+2024-11-20 10:51:38,495 INFO mapreduce.Job:  map 100% reduce 0%
+2024-11-20 10:51:40,509 INFO mapreduce.Job: Job job_1724767128407_10032 completed successfully
+2024-11-20 10:51:40,599 INFO mapreduce.Job: Counters: 39
+	File System Counters
+		FILE: Number of bytes read=0
+		FILE: Number of bytes written=25974170
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		GS: Number of bytes read=4952752479
+		GS: Number of bytes written=10135416718
+		GS: Number of read operations=1209216
+		GS: Number of large read operations=0
+		GS: Number of write operations=57231546
+		HDFS: Number of bytes read=11880
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=90
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=0
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed map tasks=2
+		Launched map tasks=92
+		Rack-local map tasks=92
+		Total time spent by all maps in occupied slots (ms)=10261672
+		Total time spent by all reduces in occupied slots (ms)=0
+		Total time spent by all map tasks (ms)=2565418
+		Total vcore-milliseconds taken by all map tasks=2565418
+		Total megabyte-milliseconds taken by all map tasks=10507952128
+	Map-Reduce Framework
+		Map input records=6331619
+		Map output records=6331619
+		Input split bytes=11880
+		Spilled Records=0
+		Failed Shuffles=0
+		Merged Map outputs=0
+		GC time elapsed (ms)=41176
+		CPU time spent (ms)=2030290
+		Physical memory (bytes) snapshot=91709812736
+		Virtual memory (bytes) snapshot=456935849984
+		Total committed heap usage (bytes)=89689948160
+		Peak Map Physical memory (bytes)=1229303808
+		Peak Map Virtual memory (bytes)=5223555072
+	File Input Format Counters 
+		Bytes Read=4952752479
+	File Output Format Counters 
+		Bytes Written=10135416718
+2024-11-20 10:51:40,701 INFO input.FileInputFormat: Total input files to process : 90
+2024-11-20 10:52:37,834 INFO partition.InputSampler: Using 6380 samples
+2024-11-20 10:52:37,980 INFO zlib.ZlibFactory: Successfully loaded & initialized native-zlib library
+2024-11-20 10:52:37,981 INFO compress.CodecPool: Got brand-new compressor [.deflate]
+2024-11-20 10:52:38,154 INFO client.DefaultNoHARMFailoverProxyProvider: Connecting to ResourceManager at nyu-dataproc-m.c.hpc-dataproc-19b8.internal./192.168.1.25:8032
+2024-11-20 10:52:38,155 INFO client.AHSProxy: Connecting to Application History server at nyu-dataproc-m.c.hpc-dataproc-19b8.internal./192.168.1.25:10200
+2024-11-20 10:52:38,192 WARN mapreduce.JobResourceUploader: Hadoop command-line option parsing not performed. Implement the Tool interface and execute your application with ToolRunner to remedy this.
+2024-11-20 10:52:38,195 INFO mapreduce.JobResourceUploader: Disabling Erasure Coding for path: /tmp/hadoop-yarn/staging/yz10317_nyu_edu/.staging/job_1724767128407_10033
+2024-11-20 10:52:38,286 INFO input.FileInputFormat: Total input files to process : 90
+2024-11-20 10:52:38,313 INFO mapreduce.JobSubmitter: number of splits:90
+2024-11-20 10:52:38,341 INFO mapreduce.JobSubmitter: Submitting tokens for job: job_1724767128407_10033
+2024-11-20 10:52:38,341 INFO mapreduce.JobSubmitter: Executing with tokens: []
+2024-11-20 10:52:38,559 INFO impl.YarnClientImpl: Submitted application application_1724767128407_10033
+2024-11-20 10:52:38,562 INFO mapreduce.Job: The url to track the job: http://nyu-dataproc-m.c.hpc-dataproc-19b8.internal.:8088/proxy/application_1724767128407_10033/
+2024-11-20 10:52:38,562 INFO mapreduce.Job: Running job: job_1724767128407_10033
+2024-11-20 10:52:47,732 INFO mapreduce.Job: Job job_1724767128407_10033 running in uber mode : false
+2024-11-20 10:52:47,733 INFO mapreduce.Job:  map 0% reduce 0%
+2024-11-20 10:53:08,922 INFO mapreduce.Job:  map 6% reduce 0%
+2024-11-20 10:53:09,928 INFO mapreduce.Job:  map 28% reduce 0%
+2024-11-20 10:53:10,933 INFO mapreduce.Job:  map 33% reduce 0%
+2024-11-20 10:53:12,949 INFO mapreduce.Job:  map 47% reduce 0%
+2024-11-20 10:53:13,961 INFO mapreduce.Job:  map 48% reduce 0%
+2024-11-20 10:53:14,965 INFO mapreduce.Job:  map 50% reduce 0%
+2024-11-20 10:53:15,975 INFO mapreduce.Job:  map 61% reduce 0%
+2024-11-20 10:53:24,015 INFO mapreduce.Job:  map 67% reduce 0%
+2024-11-20 10:53:27,036 INFO mapreduce.Job:  map 68% reduce 0%
+2024-11-20 10:53:28,040 INFO mapreduce.Job:  map 70% reduce 0%
+2024-11-20 10:53:29,045 INFO mapreduce.Job:  map 84% reduce 0%
+2024-11-20 10:53:30,053 INFO mapreduce.Job:  map 87% reduce 0%
+2024-11-20 10:53:31,058 INFO mapreduce.Job:  map 92% reduce 0%
+2024-11-20 10:53:32,062 INFO mapreduce.Job:  map 99% reduce 0%
+2024-11-20 10:53:33,067 INFO mapreduce.Job:  map 100% reduce 0%
+2024-11-20 10:53:49,130 INFO mapreduce.Job:  map 100% reduce 14%
+2024-11-20 10:53:50,135 INFO mapreduce.Job:  map 100% reduce 21%
+2024-11-20 10:53:51,146 INFO mapreduce.Job:  map 100% reduce 41%
+2024-11-20 10:53:52,152 INFO mapreduce.Job:  map 100% reduce 61%
+2024-11-20 10:53:53,156 INFO mapreduce.Job:  map 100% reduce 68%
+2024-11-20 10:53:55,164 INFO mapreduce.Job:  map 100% reduce 69%
+2024-11-20 10:53:57,172 INFO mapreduce.Job:  map 100% reduce 70%
+2024-11-20 10:53:58,176 INFO mapreduce.Job:  map 100% reduce 71%
+2024-11-20 10:53:59,180 INFO mapreduce.Job:  map 100% reduce 72%
+2024-11-20 10:54:01,188 INFO mapreduce.Job:  map 100% reduce 73%
+2024-11-20 10:54:02,192 INFO mapreduce.Job:  map 100% reduce 74%
+2024-11-20 10:54:03,196 INFO mapreduce.Job:  map 100% reduce 75%
+2024-11-20 10:54:04,203 INFO mapreduce.Job:  map 100% reduce 76%
+2024-11-20 10:54:05,207 INFO mapreduce.Job:  map 100% reduce 77%
+2024-11-20 10:54:08,220 INFO mapreduce.Job:  map 100% reduce 78%
+2024-11-20 10:54:09,223 INFO mapreduce.Job:  map 100% reduce 79%
+2024-11-20 10:54:10,228 INFO mapreduce.Job:  map 100% reduce 81%
+2024-11-20 10:54:13,240 INFO mapreduce.Job:  map 100% reduce 82%
+2024-11-20 10:54:14,244 INFO mapreduce.Job:  map 100% reduce 83%
+2024-11-20 10:54:15,249 INFO mapreduce.Job:  map 100% reduce 84%
+2024-11-20 10:54:16,252 INFO mapreduce.Job:  map 100% reduce 85%
+2024-11-20 10:54:17,256 INFO mapreduce.Job:  map 100% reduce 86%
+2024-11-20 10:54:20,268 INFO mapreduce.Job:  map 100% reduce 87%
+2024-11-20 10:54:21,272 INFO mapreduce.Job:  map 100% reduce 88%
+2024-11-20 10:54:22,276 INFO mapreduce.Job:  map 100% reduce 90%
+2024-11-20 10:54:25,289 INFO mapreduce.Job:  map 100% reduce 91%
+2024-11-20 10:54:26,293 INFO mapreduce.Job:  map 100% reduce 92%
+2024-11-20 10:54:27,299 INFO mapreduce.Job:  map 100% reduce 93%
+2024-11-20 10:54:28,303 INFO mapreduce.Job:  map 100% reduce 94%
+2024-11-20 10:54:30,314 INFO mapreduce.Job:  map 100% reduce 95%
+2024-11-20 10:54:32,323 INFO mapreduce.Job:  map 100% reduce 96%
+2024-11-20 10:54:33,328 INFO mapreduce.Job:  map 100% reduce 97%
+2024-11-20 10:54:34,333 INFO mapreduce.Job:  map 100% reduce 98%
+2024-11-20 10:54:40,359 INFO mapreduce.Job:  map 100% reduce 99%
+2024-11-20 10:54:44,377 INFO mapreduce.Job:  map 100% reduce 100%
+2024-11-20 10:54:49,409 INFO mapreduce.Job: Job job_1724767128407_10033 completed successfully
+2024-11-20 10:54:49,453 INFO mapreduce.Job: Counters: 60
+	File System Counters
+		FILE: Number of bytes read=5041387605
+		FILE: Number of bytes written=10111742520
+		FILE: Number of read operations=0
+		FILE: Number of large read operations=0
+		FILE: Number of write operations=0
+		GS: Number of bytes read=5067740129
+		GS: Number of bytes written=5479431624
+		GS: Number of read operations=57240096
+		GS: Number of large read operations=0
+		GS: Number of write operations=12663238
+		HDFS: Number of bytes read=11880
+		HDFS: Number of bytes written=0
+		HDFS: Number of read operations=90
+		HDFS: Number of large read operations=0
+		HDFS: Number of write operations=0
+		HDFS: Number of bytes read erasure-coded=0
+	Job Counters 
+		Killed map tasks=2
+		Launched map tasks=90
+		Launched reduce tasks=10
+		Rack-local map tasks=90
+		Total time spent by all maps in occupied slots (ms)=7141800
+		Total time spent by all reduces in occupied slots (ms)=2504804
+		Total time spent by all map tasks (ms)=1785450
+		Total time spent by all reduce tasks (ms)=626201
+		Total vcore-milliseconds taken by all map tasks=1785450
+		Total vcore-milliseconds taken by all reduce tasks=626201
+		Total megabyte-milliseconds taken by all map tasks=7313203200
+		Total megabyte-milliseconds taken by all reduce tasks=2564919296
+	Map-Reduce Framework
+		Map input records=6331619
+		Map output records=6331619
+		Map output bytes=5016064087
+		Map output materialized bytes=5041392945
+		Input split bytes=11880
+		Combine input records=0
+		Combine output records=0
+		Reduce input groups=6331619
+		Reduce shuffle bytes=5041392945
+		Reduce input records=6331619
+		Reduce output records=6331619
+		Spilled Records=12663238
+		Shuffled Maps =900
+		Failed Shuffles=0
+		Merged Map outputs=900
+		GC time elapsed (ms)=31727
+		CPU time spent (ms)=1627770
+		Physical memory (bytes) snapshot=84746027008
+		Virtual memory (bytes) snapshot=501941211136
+		Total committed heap usage (bytes)=99737403392
+		Peak Map Physical memory (bytes)=1052778496
+		Peak Map Virtual memory (bytes)=5105836032
+		Peak Reduce Physical memory (bytes)=1601363968
+		Peak Reduce Virtual memory (bytes)=5104865280
+	Shuffle Errors
+		BAD_ID=0
+		CONNECTION=0
+		IO_ERROR=0
+		WRONG_LENGTH=0
+		WRONG_MAP=0
+		WRONG_REDUCE=0
+	File Input Format Counters 
+		Bytes Read=5067708359
+	File Output Format Counters 
+		Bytes Written=5479431624
+Exception in thread "main" java.lang.IllegalArgumentException: Wrong FS: gs://nyu-dataproc-hdfs-ingest/gharchive/output_partitions.lst, expected: hdfs://nyu-dataproc-m
+	at org.apache.hadoop.fs.FileSystem.checkPath(FileSystem.java:825)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.getPathName(DistributedFileSystem.java:256)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$19.doCall(DistributedFileSystem.java:1005)
+	at org.apache.hadoop.hdfs.DistributedFileSystem$19.doCall(DistributedFileSystem.java:1002)
+	at org.apache.hadoop.fs.FileSystemLinkResolver.resolve(FileSystemLinkResolver.java:81)
+	at org.apache.hadoop.hdfs.DistributedFileSystem.delete(DistributedFileSystem.java:1012)
+	at DataIngest.main(DataIngest.java:85)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at org.apache.hadoop.util.RunJar.run(RunJar.java:328)
+	at org.apache.hadoop.util.RunJar.main(RunJar.java:241)
+[?2004h]0;yz10317_nyu_edu@nyu-dataproc-m: ~[01;32myz10317_nyu_edu@nyu-dataproc-m[00m:[01;34m~[00m$ exit
+[?2004lexit
+
+Script done on 2024-11-20 10:54:54+00:00 [COMMAND_EXIT_CODE="1"]

@@ -1,0 +1,11 @@
+hackernews hot words overall:
+work: 944
+good: 922
+years: 623
+better: 619
+code: 547
+right: 531
+different: 522
+data: 508
+first: 495
+problem: 475

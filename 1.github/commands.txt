@@ -1,0 +1,4 @@
+javac -classpath `hadoop classpath` *.java
+jar cvf dataIngest.jar *.class
+
+hadoop jar dataIngest.jar DataIngest gs://nyu-dataproc-hdfs-ingest/gharchive gs://nyu-dataproc-hdfs-ingest/gharchive/output

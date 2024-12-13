@@ -1,0 +1,11 @@
+hackernews hot words 2021-2024:
+work: 354
+good: 330
+years: 253
+better: 221
+problem: 200
+data: 199
+code: 187
+system: 187
+right: 184
+find: 182

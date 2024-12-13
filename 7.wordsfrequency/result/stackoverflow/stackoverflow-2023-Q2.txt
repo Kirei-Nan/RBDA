@@ -1,0 +1,11 @@
+stackoverflow hot words 2023-Q2:
+error: 1477
+code: 1439
+file: 1357
+data: 1268
+import: 1266
+function: 1027
+class: 897
+value: 872
+type: 755
+list: 730

@@ -1,0 +1,11 @@
+github hot words 2023-Q1:
+error: 235
+version: 196
+data: 178
+file: 166
+bug: 161
+images: 160
+code: 134
+image: 124
+test: 120
+issue: 118

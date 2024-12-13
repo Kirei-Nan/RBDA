@@ -1,0 +1,11 @@
+hackernews hot words 2016-2020:
+work: 344
+good: 321
+better: 247
+years: 243
+code: 228
+different: 214
+right: 206
+data: 200
+first: 177
+never: 176

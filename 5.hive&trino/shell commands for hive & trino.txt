@@ -1,0 +1,54 @@
+// connect to hive
+beeline -u jdbc:hive2://localhost:10000
+
+// in the hive shell
+// initialize 
+set hive.execution.engine=mr;
+set hive.fetch.task.conversion=minimal;
+use by2352_nyu_edu;
+
+// create an external table with quora data
+create external table quora (`time` timestamp, text string)
+row format delimited fields terminated by '\t'
+location '/user/by2352_nyu_edu/project/output_clean';
+
+// create an external table with github data
+create external table github (id string, `time` string, text string,
+ source string)
+row format serde 'org.apache.hive.hcatalog.data.JsonSerDe'
+location '/user/yz10317_nyu_edu/gharchive';
+// or
+create external table github_json (json STRING)
+stored as textfile
+location '/user/yz10317_nyu_edu/gharchive';
+// query
+select get_json_object(json, '$.text') as text from github_json limit 2;
+
+// create an external table with stackoverflow data
+create external table stackoverflow (id int, post_type_id tinyint, text string, cleaned_tags string, create_date timestamp, score int)
+row format delimited fields terminated by '\t'
+location '/user/zn2145_nyu_edu/cleaned_data';
+
+// create an external table with hackernews data
+create external table hackernews (id bigint, title string, text string, `by` string, score int, `time` timestamp, type string)
+row format delimited fields terminated by '\t'
+location '/user/jf4519_nyu_edu/project/cleaned_data';
+
+// ctrl-D to quit beeline
+
+--------------------------------------------------------------
+// use trino to extract text
+
+// quora
+trino --execute 'SELECT text FROM hive.by2352_nyu_edu.quora ORDER BY random() LIMIT 10000' --output-format=TSV > quora_text.txt
+
+// github
+trino --execute 'SELECT text FROM hive.by2352_nyu_edu.github ORDER BY random() LIMIT 10000' --output-format=TSV > github_text.txt
+
+// stackoverflow
+trino --execute 'SELECT cleaned_tags, text FROM hive.by2352_nyu_edu.stackoverflow WHERE post_type_id = 1 ORDER BY random() LIMIT 10000' --output-format=TSV > stackoverflow_tag_text.txt
+
+// hackernews
+trino --execute 'SELECT text FROM hive.by2352_nyu_edu.hackernews ORDER BY random() LIMIT 10000' --output-format=TSV > hackernews_text.txt
+
+

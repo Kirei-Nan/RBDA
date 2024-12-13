@@ -1,0 +1,15 @@
+// use trino to extract text
+
+// quora
+trino --execute 'SELECT time, text FROM hive.by2352_nyu_edu.quora ORDER BY random() LIMIT 10000' --output-format=TSV > quora_text.txt
+
+// github
+trino --execute 'SELECT time, text FROM hive.by2352_nyu_edu.github ORDER BY random() LIMIT 10000' --output-format=TSV > github_text.txt
+
+// stackoverflow
+trino --execute 'SELECT create_date, text FROM hive.by2352_nyu_edu.stackoverflow WHERE post_type_id = 1 ORDER BY random() LIMIT 10000' --output-format=TSV > stackoverflow_text.txt
+
+// hackernews
+trino --execute 'SELECT time, text FROM hive.by2352_nyu_edu.hackernews ORDER BY random() LIMIT 10000' --output-format=TSV > hackernews_text.txt
+
+

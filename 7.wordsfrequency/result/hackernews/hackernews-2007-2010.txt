@@ -1,0 +1,11 @@
+hackernews hot words 2007-2010:
+good: 81
+idea: 48
+work: 45
+different: 38
+google: 36
+better: 34
+money: 33
+find: 30
+software: 29
+right: 29

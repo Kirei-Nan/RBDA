@@ -1,0 +1,11 @@
+quora hot words overall:
+best: 475
+good: 348
+india: 325
+job: 250
+work: 206
+better: 183
+engineering: 175
+college: 164
+life: 157
+first: 149
